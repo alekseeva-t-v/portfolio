@@ -1,0 +1,155 @@
+.header__top {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0;
+  color: var(--header-text);
+  background-color: var(--dark-bg);
+  border-bottom: solid 1px var(--dark-border);
+
+  &-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  margin-right: auto;
+
+  &__link {
+    font-size: 24px;
+    font-weight: 500;
+    // font-family: 'Poppins', sans-serif;
+    color: var(--header-text);
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    // font-family: 'Poppins', sans-serif;
+  }
+
+  &__link {
+    color: var(--header-text);
+    transition: all 0.5s;
+  }
+}
+
+.menu__link {
+  position: relative;
+  color: var(--header-text);
+  transition: all 0.5s;
+
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--blue-bright);
+    content: '';
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 21px;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+  }
+  span.long {
+    width: 35px;
+  }
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.light-mode-btn,
+.lang-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 51px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #7a7575;
+  transition: all 0.5s;
+}
+
+.light-mode-btn::before,
+.lang-btn::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-bright);
+  transition: all 0.5s;
+}
+
+.light-mode-btn--active::before,
+.lang-btn--active::before {
+  left: 26px;
+}
+
+.light-mode-btn__icon {
+  position: relative;
+}
+
+.lang__elem {
+  position: relative;
+  color: var(--blackpure);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 790px) {
+  .settings {
+    order: 0;
+  }
+
+  .header__top-inner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu__list {
+    font-size: 18px;
+    column-gap: 20px;
+  }
+}
