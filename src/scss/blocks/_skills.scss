@@ -1,0 +1,91 @@
+.skills {
+  &__sub-title {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    @include before_circle;
+
+    &:before {
+      top: -4px;
+      left: calc(50% - 22.5px);
+    }
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 40px 0;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    max-width: 100%;
+    height: 300px;
+    background: var(--project-card-bg);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: var(--box-shadow);
+  }
+
+  &__card:hover {
+    height: 360px;
+  }
+
+
+  &__img-box {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__card:hover &__img-box {
+    top: -100px;
+    scale: 0.75;
+  }
+
+  &__content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 25px;
+    padding: 0 30px;
+    text-align: center;
+    color: var(--project-card-text);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__card:hover &__content {
+    top: 130px;
+    height: 200px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+}

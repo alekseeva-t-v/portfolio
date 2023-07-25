@@ -23,7 +23,6 @@
   &__link {
     font-size: 24px;
     font-weight: 500;
-    // font-family: 'Poppins', sans-serif;
     color: var(--header-text);
   }
 }
@@ -35,7 +34,6 @@
     column-gap: 40px;
     font-size: 20px;
     font-weight: 500;
-    // font-family: 'Poppins', sans-serif;
   }
 
   &__link {
@@ -103,7 +101,7 @@
   height: 25px;
   padding: 5px;
   border-radius: 50px;
-  background-color: #7a7575;
+  background-color: var(--gray);
   transition: all 0.5s;
 }
 

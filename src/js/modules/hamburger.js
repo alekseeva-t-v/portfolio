@@ -1,3 +1,7 @@
+/**
+ * Отображает всплывающее меню по определенным условиям
+ *
+ */
 function showHamburger() {
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector('.menu-window');
