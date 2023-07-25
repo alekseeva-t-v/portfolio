@@ -307,10 +307,10 @@
         <img src="./img/jpg/photo.jpg" alt="" />
       </div>
       <div class="about__deskr">
-        <h3 class="section-sub-title about__sub-title">Обо мне</h3>
-        <h2 class="section-title">Меня зовут Татьяна</h2>
+        <h3 class="section-sub-title about__sub-title lng-about">Обо мне</h3>
+        <h2 class="section-title lng-name">Меня зовут Татьяна</h2>
         <div class="divider"></div>
-        <div class="about__text">
+        <div class="about__text lng-aboutText">
           <p>
             Я Frontend разработчик с опытом проектов в сфере более года. Прошла
             курсы <b>Нетологии</b>
@@ -408,7 +408,7 @@ c-68 0 -81 -3 -81 -16 0 -108 -125 -224 -240 -224 -92 0 -202 80 -228 166 -17
 </g>
 </svg>
           </div>
-          <div>
+          <div class="lng-layout">
             <h4 class="about__skills-title">Верстка</h4>
             <p class="about__skills-text">
               Уверенные знания HTML5 / CSS3, адаптивная и кроссбраузерная
@@ -563,7 +563,7 @@ l0 -403 -150 0 -150 0 0 625 c0 344 4 625 8 625 5 0 27 -13 48 -28z"
 </svg>
 
           </div>
-          <div>
+          <div class="lng-development">
             <h4 class="about__skills-title">JavaScript разработка</h4>
             <p class="about__skills-text">
               Хорошее знание нативного JavaScript и популярных библиотек
@@ -632,7 +632,7 @@ m250 -259 c85 -26 165 -89 216 -169 71 -113 71 -281 0 -394 -134 -213 -421
 </g>
 </svg>
           </div>
-          <div>
+          <div class="lng-react">
             <h4 class="about__skills-title">React разработка</h4>
             <p class="about__skills-text">
               Знание библиотеки React. Опыт работы с Redux и Redux-toolkit
@@ -760,7 +760,7 @@ c-10 50 -24 106 -31 124 -24 60 -40 63 -371 63 -275 0 -300 -2 -329 -19z m552
 </svg>
 
           </div>
-          <div>
+          <div class="lng-cms">
             <h4 class="about__skills-title">Работа с CMS</h4>
             <p class="about__skills-text">
               Опыт работы с Wordpress. Базовые знания PHP.
@@ -774,12 +774,12 @@ c-10 50 -24 106 -31 124 -24 60 -40 63 -371 63 -275 0 -300 -2 -329 -19z m552
 
         <section class="experience">
   <div class="container">
-    <h3 class="section-sub-title experience__sub-title">Опыт</h3>
-    <h2 class="section-title">Работа и обучение</h2>
+    <h3 class="section-sub-title experience__sub-title lng-experience">Опыт</h3>
+    <h2 class="section-title lng-workTitle">Работа и обучение</h2>
     <div class="divider"></div>
     <div class="experience__wrapper">
       <div class="experience__column">
-        <h4 class="experience__column-title">Образование</h4>
+        <h4 class="experience__column-title lng-education">Образование</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -848,17 +848,21 @@ c-576 0 -576 0 -616 22 -76 43 -83 66 -86 293 -2 124 0 214 7 236 15 51 48 88
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">
-                  Всероссийский заочный Финансово-экономический институт
-                </h5>
-                <p class="experience__item-location">
-                  Диплом с отличием | Тула (2003 - 2009)
-                </p>
+                <div class="lng-educationItem">
+                  <h5 class="experience__item-title">
+                    Всероссийский заочный Финансово-экономический институт
+                  </h5>
+                  <p class="experience__item-location">
+                    Диплом с отличием | Тула (2003 - 2009)
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Направление</b>: Маркетинг</p>
-                <p><b>Специализация</b>: Коммерческий маркетинг</p>
-                <p><b>Квалификация</b>: Маркетолог</p>
+                <div class="lng-educationItemDesc">
+                  <p><b>Направление</b>: Маркетинг</p>
+                  <p><b>Специализация</b>: Коммерческий маркетинг</p>
+                  <p><b>Квалификация</b>: Маркетолог</p>
+                </div>
 
                 <div class="experience__item-link">
                   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -880,14 +884,16 @@ c-576 0 -576 0 -616 22 -76 43 -83 66 -86 293 -2 124 0 214 7 236 15 51 48 88
 154 372 105z"/>
 </g>
 </svg>
-                  <a href="#">Диплом о высшем образовании</a>
+                  <a href="#" class="lng-educationItemLink"
+                    >Диплом о высшем образовании</a
+                  >
                 </div>
               </div>
             </div>
           </li>
         </ul>
 
-        <h4 class="experience__column-title">Опыт работы</h4>
+        <h4 class="experience__column-title lng-work">Опыт работы</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -965,20 +971,24 @@ m787 -102 c27 -102 50 -190 50 -196 0 -6 -26 -2 -62 9 -35 11 -72 17 -84 14
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">ПАО «МегаФон»</h5>
-                <p class="experience__item-location">
-                  Июнь 2018 – Настоящее время
-                </p>
+                <div class="lng-workItemMegafon">
+                  <h5 class="experience__item-title">ПАО «МегаФон»</h5>
+                  <p class="experience__item-location">
+                    Июнь 2018 – Настоящее время
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p>
-                  <b>Должность</b>: Специалист отдела Федерального
-                  телемаркетинга
-                </p>
-                <p>
-                  <b>Обязанности</b>: Продвижение услуг, тарифов и опций
-                  компании
-                </p>
+                <div class="lng-workItemMegafonDesc">
+                  <p>
+                    <b>Должность</b>: Специалист отдела Федерального
+                    телемаркетинга
+                  </p>
+                  <p>
+                    <b>Обязанности</b>: Продвижение услуг, тарифов и опций
+                    компании
+                  </p>
+                </div>
               </div>
             </div>
           </li>
@@ -1059,28 +1069,33 @@ m787 -102 c27 -102 50 -190 50 -196 0 -6 -26 -2 -62 9 -35 11 -72 17 -84 14
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">
-                  ООО «АНКОР кадровые решения»
-                </h5>
-                <p class="experience__item-location">Июнь 2009 – 2018</p>
+                <div class="lng-workItemAncor">
+                  <h5 class="experience__item-title">
+                    ООО «АНКОР кадровые решения»
+                  </h5>
+                  <p class="experience__item-location">Июнь 2009 – 2018</p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p>
-                  <b>Должность</b>: Специалист по работе с Клиентами, Наставник
-                </p>
-                <p>
-                  <b>Обязанности</b>: Консультация юридических и физических лиц
-                  по услугам и тарифам компании. Работа с базой данных клиентов.
-                  Наставничество и адаптация новых сотрудников, помощь
-                  сотрудникам в решении сложных вопросов.
-                </p>
+                <div class="lng-workItemAncorDesc">
+                  <p>
+                    <b>Должность</b>: Специалист по работе с Клиентами,
+                    Наставник
+                  </p>
+                  <p>
+                    <b>Обязанности</b>: Консультация юридических и физических
+                    лиц по услугам и тарифам компании. Работа с базой данных
+                    клиентов. Наставничество и адаптация новых сотрудников,
+                    помощь сотрудникам в решении сложных вопросов.
+                  </p>
+                </div>
               </div>
             </div>
           </li>
         </ul>
       </div>
       <div class="experience__column">
-        <h4 class="experience__column-title">Курсы</h4>
+        <h4 class="experience__column-title lng-coursesTitle">Курсы</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -1144,17 +1159,27 @@ l422 -3 73 -290z"/>
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">
-                  Январь 2023 - Март 2023
-                </p>
+                <div class="lng-coursesItemNetologyReact">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">
+                    Январь 2023 - Март 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">React для JS-разработчиков</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: Основы работы с библиотекой React • Жизненный цикл и работа с HTTP • Компоненты высшего порядка • Hooks • React Router • Redux •
-                  Redux Toolkit
-                </p>
+                <div class="lng-coursesItemNetologyReactDesc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >React для JS-разработчиков</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: Основы работы с библиотекой React
+                    • Жизненный цикл и работа с HTTP • Компоненты высшего
+                    порядка • Hooks • React Router • Redux • Redux Toolkit
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="20px" height="20px" viewBox="0 0 512.000000 512.000000"
@@ -1175,7 +1200,9 @@ l422 -3 73 -290z"/>
 154 372 105z"/>
 </g>
 </svg>
-                  <a href="#">Удостоверение о повышении квалификации</a>
+                  <a href="#" class="lng-coursesItemNetologyReactLink"
+                    >Удостоверение о повышении квалификации</a
+                  >
                 </div>
               </div>
             </div>
@@ -1242,20 +1269,29 @@ l422 -3 73 -290z"/>
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">Rolling Scopes School</h5>
-                <p class="experience__item-location">
-                  Декабрь 2022 - Февраль 2023
-                </p>
+                <div class="lng-coursesItemRSJavaScript0">
+                  <h5 class="experience__item-title">Rolling Scopes School</h5>
+                  <p class="experience__item-location">
+                    Декабрь 2022 - Февраль 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">JavaScript/Front-end. Stage 0</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: Основы работы с системой контроля
-                  версий Git • Chrome Dev Tools • VS Code • Терминалом • HTML •
-                  CSS • FlexBox • Адаптивная и мобильная верстка • Figma •
-                  Основы JavaScript • DOM API • DOM Events • Структуры данных и
-                  алгоритмы
-                </p>
+                <div class="lng-coursesItemRSJavaScript0Desc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >JavaScript/Front-end. Stage 0</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: Основы работы с системой контроля
+                    версий Git • Chrome Dev Tools • VS Code • Терминалом • HTML
+                    • CSS • FlexBox • Адаптивная и мобильная верстка • Figma •
+                    Основы JavaScript • DOM API • DOM Events • Структуры данных
+                    и алгоритмы
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="20px" height="20px" viewBox="0 0 512.000000 512.000000"
@@ -1276,7 +1312,9 @@ l422 -3 73 -290z"/>
 154 372 105z"/>
 </g>
 </svg>
-                  <a href="#">Сертификат об обучении</a>
+                  <a href="#" class="lng-coursesItemRSJavaScript0Link"
+                    >Сертификат об обучении</a
+                  >
                 </div>
               </div>
             </div>
@@ -1343,19 +1381,29 @@ l422 -3 73 -290z"/>
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">
-                  Сентябрь 2022 - Июль 2023
-                </p>
+                <div class="lng-coursesItemNetologyJS">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">
+                    Сентябрь 2022 - Июль 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">JavaScript-программирование для начинающих</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: HTML • CSS • Верстка форм • FlexBox
-                  • Адаптивная и мобильная верстка • Система контроля версий Git
-                  • Основы программирования • Основы JavaScript • Основы
-                  разработки интерфейсов • Работа с DOM • Работа с состоянием
-                </p>
+                <div class="lng-coursesItemNetologyJSDesc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >JavaScript-программирование для начинающих</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: HTML • CSS • Верстка форм •
+                    FlexBox • Адаптивная и мобильная верстка • Система контроля
+                    версий Git • Основы программирования • Основы JavaScript •
+                    Основы разработки интерфейсов • Работа с DOM • Работа с
+                    состоянием
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="20px" height="20px" viewBox="0 0 512.000000 512.000000"
@@ -1376,7 +1424,9 @@ l422 -3 73 -290z"/>
 154 372 105z"/>
 </g>
 </svg>
-                  <a href="#">Диплом профессиональной переподготовки</a>
+                  <a href="#" class="lng-coursesItemNetologyJSLink"
+                    >Диплом профессиональной переподготовки</a
+                  >
                 </div>
               </div>
             </div>
@@ -1443,12 +1493,22 @@ l422 -3 73 -290z"/>
 </svg>
 
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">Июнь 2022 - Июль 2022</p>
+                <div class="lng-coursesItemNetologyLayout">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">Июнь 2022 - Июль 2022</p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>:<span class="selection-text"> Основы верстки сайта</span></p>
-                <p><b>Улучшаемые навыки</b>: HTML • CSS • Адаптивная верстка</p>
+                <div class="lng-coursesItemNetologyLayoutDesc">
+                  <p>
+                    <b>Курс</b>:<span class="selection-text">
+                      Основы верстки сайта</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: HTML • CSS • Адаптивная верстка
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="20px" height="20px" viewBox="0 0 512.000000 512.000000"
@@ -1469,7 +1529,7 @@ l422 -3 73 -290z"/>
 154 372 105z"/>
 </g>
 </svg>
-                  <a href="#">Сертификат об обучении</a>
+                  <a href="#" class="lng-coursesItemRSJavaScript0Link">Сертификат об обучении</a>
                 </div>
               </div>
             </div>
@@ -1482,8 +1542,8 @@ l422 -3 73 -290z"/>
 
         <section class="skills">
   <div class="container">
-    <h3 class="section-sub-title skills__sub-title">Навыки</h3>
-    <h2 class="section-title">Использую в работе</h2>
+    <h3 class="section-sub-title skills__sub-title lng-skills">Навыки</h3>
+    <h2 class="section-title lng-useWork">Использую в работе</h2>
     <div class="divider"></div>
     <div class="skills__wrapper">
       <div class="skills__card">
@@ -1492,7 +1552,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">HTML5</h2>
-          <p>
+          <p class="lng-skillsHTML5">
             Умение писать валидный/W3C код • Применение методологии БЭМ • Хорошее понимание семантики HTML
           </p>
         </div>
@@ -1503,7 +1563,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">CSS3</h2>
-          <p>
+          <p class="lng-skillsCSS3">
             Кроссбраузерная верстка • Grid • FlexBox • Создание адаптивного и респонсив дизайна • Мобильная верстка
           </p>
         </div>
@@ -1514,7 +1574,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">JavaScript</h2>
-          <p>
+          <p class="lng-skillsJavaScript">
             Умение работать с ванильным JavaScript • Базовый опыт работы с DOM • Понимание принципов ООП и их реализация
           </p>
         </div>
@@ -1525,7 +1585,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">TypeScript</h2>
-          <p>
+          <p class="lng-skillsTypeScript">
             Базовые знания TypeScript • Понимание основ и современных концепций
           </p>
         </div>
@@ -1536,7 +1596,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Git, GitHub</h2>
-          <p>
+          <p class="lng-skillsGit">
             Базовые знания Git • Опыт работы с GitHub • Понимание принципов контроля версий
           </p>
         </div>
@@ -1547,7 +1607,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Gulp</h2>
-          <p>
+          <p class="lng-skillsGulp">
             Опыт работы с Gulp для оптимизации проектов и автоматизации сборки
           </p>
         </div>
@@ -1558,7 +1618,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Webpack</h2>
-          <p>
+          <p class="lng-skillsWebpack">
             Опыт работы с системой сборки Webpack • Умение работать на уровне построения конфига
           </p>
         </div>
@@ -1569,7 +1629,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Nodejs</h2>
-          <p>
+          <p class="lng-skillsNodejs">
             Опыт работы с Node.js (npm) • Базовые навыки: установить / обновить / собрать проект
           </p>
         </div>
@@ -1580,7 +1640,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">React</h2>
-          <p>
+          <p class="lng-skillsReact">
             Базовое знание библиотеки React (Жизненный цикл компонента, хуки, оптимизация...) • Опыт применения
           </p>
         </div>
@@ -1591,7 +1651,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Redux</h2>
-          <p>
+          <p class="lng-skillsRedux">
             Понимание идеологии Redux • Опыт работы с Redux и Redux-toolkit
           </p>
         </div>
@@ -1602,7 +1662,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Bootstrap</h2>
-          <p>
+          <p class="lng-skillsBootstrap">
            Навык работы с Bootstrap 5 • Опыт быстрого создания и настройки сайтов, ориентированных на мобильные устройства
           </p>
         </div>
@@ -1613,7 +1673,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">jQuery</h2>
-          <p>
+          <p class="lng-skillsjQuery">
             Базовые знания jQuery • При необходимости ускорение с её помощью режима работы
           </p>
         </div>
@@ -1624,7 +1684,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Sass</h2>
-          <p>
+          <p class="lng-skillsSass">
             Опыт работы с CSS препроцессором SASS • Использование языка SCSS для написания стилей
           </p>
         </div>
@@ -1635,7 +1695,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Figma</h2>
-          <p>
+          <p class="lng-skillsFigma">
             Базовые навыки работы с Figma • Умение верстать компоненты и страницы по макетам из Figma
           </p>
         </div>
@@ -1646,7 +1706,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Photoshop</h2>
-          <p>
+          <p class="lng-skillsPhotoshop">
             Базовое знание функционала • Умение работать с макетами Photoshop
           </p>
         </div>
@@ -1657,7 +1717,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">PHP</h2>
-          <p>
+          <p class="lng-skillsPHP">
             Базовые знания о PHP • Владение инструментами разработки
           </p>
         </div>
@@ -1668,7 +1728,7 @@ l422 -3 73 -290z"/>
         </div>
         <div class="skills__content">
           <h2 class="skills__title">Wordpress</h2>
-          <p>
+          <p class="lng-skillsWordpress">
             Понимание основ работы с серверами, хостингами • Опыт верстки под Wordpress
           </p>
         </div>

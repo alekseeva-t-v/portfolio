@@ -1,11 +1,11 @@
 <section class="experience">
   <div class="container">
-    <h3 class="section-sub-title experience__sub-title">Опыт</h3>
-    <h2 class="section-title">Работа и обучение</h2>
+    <h3 class="section-sub-title experience__sub-title lng-experience">Опыт</h3>
+    <h2 class="section-title lng-workTitle">Работа и обучение</h2>
     <div class="divider"></div>
     <div class="experience__wrapper">
       <div class="experience__column">
-        <h4 class="experience__column-title">Образование</h4>
+        <h4 class="experience__column-title lng-education">Образование</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -13,28 +13,34 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/education.html')
                 </div>
-                <h5 class="experience__item-title">
-                  Всероссийский заочный Финансово-экономический институт
-                </h5>
-                <p class="experience__item-location">
-                  Диплом с отличием | Тула (2003 - 2009)
-                </p>
+                <div class="lng-educationItem">
+                  <h5 class="experience__item-title">
+                    Всероссийский заочный Финансово-экономический институт
+                  </h5>
+                  <p class="experience__item-location">
+                    Диплом с отличием | Тула (2003 - 2009)
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Направление</b>: Маркетинг</p>
-                <p><b>Специализация</b>: Коммерческий маркетинг</p>
-                <p><b>Квалификация</b>: Маркетолог</p>
+                <div class="lng-educationItemDesc">
+                  <p><b>Направление</b>: Маркетинг</p>
+                  <p><b>Специализация</b>: Коммерческий маркетинг</p>
+                  <p><b>Квалификация</b>: Маркетолог</p>
+                </div>
 
                 <div class="experience__item-link">
                   @@include('./experience-icon/eye.html')
-                  <a href="#">Диплом о высшем образовании</a>
+                  <a href="#" class="lng-educationItemLink"
+                    >Диплом о высшем образовании</a
+                  >
                 </div>
               </div>
             </div>
           </li>
         </ul>
 
-        <h4 class="experience__column-title">Опыт работы</h4>
+        <h4 class="experience__column-title lng-work">Опыт работы</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -42,20 +48,24 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/work.html')
                 </div>
-                <h5 class="experience__item-title">ПАО «МегаФон»</h5>
-                <p class="experience__item-location">
-                  Июнь 2018 – Настоящее время
-                </p>
+                <div class="lng-workItemMegafon">
+                  <h5 class="experience__item-title">ПАО «МегаФон»</h5>
+                  <p class="experience__item-location">
+                    Июнь 2018 – Настоящее время
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p>
-                  <b>Должность</b>: Специалист отдела Федерального
-                  телемаркетинга
-                </p>
-                <p>
-                  <b>Обязанности</b>: Продвижение услуг, тарифов и опций
-                  компании
-                </p>
+                <div class="lng-workItemMegafonDesc">
+                  <p>
+                    <b>Должность</b>: Специалист отдела Федерального
+                    телемаркетинга
+                  </p>
+                  <p>
+                    <b>Обязанности</b>: Продвижение услуг, тарифов и опций
+                    компании
+                  </p>
+                </div>
               </div>
             </div>
           </li>
@@ -66,28 +76,33 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/work.html')
                 </div>
-                <h5 class="experience__item-title">
-                  ООО «АНКОР кадровые решения»
-                </h5>
-                <p class="experience__item-location">Июнь 2009 – 2018</p>
+                <div class="lng-workItemAncor">
+                  <h5 class="experience__item-title">
+                    ООО «АНКОР кадровые решения»
+                  </h5>
+                  <p class="experience__item-location">Июнь 2009 – 2018</p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p>
-                  <b>Должность</b>: Специалист по работе с Клиентами, Наставник
-                </p>
-                <p>
-                  <b>Обязанности</b>: Консультация юридических и физических лиц
-                  по услугам и тарифам компании. Работа с базой данных клиентов.
-                  Наставничество и адаптация новых сотрудников, помощь
-                  сотрудникам в решении сложных вопросов.
-                </p>
+                <div class="lng-workItemAncorDesc">
+                  <p>
+                    <b>Должность</b>: Специалист по работе с Клиентами,
+                    Наставник
+                  </p>
+                  <p>
+                    <b>Обязанности</b>: Консультация юридических и физических
+                    лиц по услугам и тарифам компании. Работа с базой данных
+                    клиентов. Наставничество и адаптация новых сотрудников,
+                    помощь сотрудникам в решении сложных вопросов.
+                  </p>
+                </div>
               </div>
             </div>
           </li>
         </ul>
       </div>
       <div class="experience__column">
-        <h4 class="experience__column-title">Курсы</h4>
+        <h4 class="experience__column-title lng-coursesTitle">Курсы</h4>
         <ul>
           <li>
             <div class="experience__item">
@@ -95,20 +110,32 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/course.html')
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">
-                  Январь 2023 - Март 2023
-                </p>
+                <div class="lng-coursesItemNetologyReact">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">
+                    Январь 2023 - Март 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">React для JS-разработчиков</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: Основы работы с библиотекой React • Жизненный цикл и работа с HTTP • Компоненты высшего порядка • Hooks • React Router • Redux •
-                  Redux Toolkit
-                </p>
+                <div class="lng-coursesItemNetologyReactDesc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >React для JS-разработчиков</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: Основы работы с библиотекой React
+                    • Жизненный цикл и работа с HTTP • Компоненты высшего
+                    порядка • Hooks • React Router • Redux • Redux Toolkit
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   @@include('./experience-icon/eye.html')
-                  <a href="#">Удостоверение о повышении квалификации</a>
+                  <a href="#" class="lng-coursesItemNetologyReactLink"
+                    >Удостоверение о повышении квалификации</a
+                  >
                 </div>
               </div>
             </div>
@@ -119,23 +146,34 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/course.html')
                 </div>
-                <h5 class="experience__item-title">Rolling Scopes School</h5>
-                <p class="experience__item-location">
-                  Декабрь 2022 - Февраль 2023
-                </p>
+                <div class="lng-coursesItemRSJavaScript0">
+                  <h5 class="experience__item-title">Rolling Scopes School</h5>
+                  <p class="experience__item-location">
+                    Декабрь 2022 - Февраль 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">JavaScript/Front-end. Stage 0</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: Основы работы с системой контроля
-                  версий Git • Chrome Dev Tools • VS Code • Терминалом • HTML •
-                  CSS • FlexBox • Адаптивная и мобильная верстка • Figma •
-                  Основы JavaScript • DOM API • DOM Events • Структуры данных и
-                  алгоритмы
-                </p>
+                <div class="lng-coursesItemRSJavaScript0Desc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >JavaScript/Front-end. Stage 0</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: Основы работы с системой контроля
+                    версий Git • Chrome Dev Tools • VS Code • Терминалом • HTML
+                    • CSS • FlexBox • Адаптивная и мобильная верстка • Figma •
+                    Основы JavaScript • DOM API • DOM Events • Структуры данных
+                    и алгоритмы
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   @@include('./experience-icon/eye.html')
-                  <a href="#">Сертификат об обучении</a>
+                  <a href="#" class="lng-coursesItemRSJavaScript0Link"
+                    >Сертификат об обучении</a
+                  >
                 </div>
               </div>
             </div>
@@ -146,22 +184,34 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/course.html')
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">
-                  Сентябрь 2022 - Июль 2023
-                </p>
+                <div class="lng-coursesItemNetologyJS">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">
+                    Сентябрь 2022 - Июль 2023
+                  </p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>: <span class="selection-text">JavaScript-программирование для начинающих</span></p>
-                <p>
-                  <b>Улучшаемые навыки</b>: HTML • CSS • Верстка форм • FlexBox
-                  • Адаптивная и мобильная верстка • Система контроля версий Git
-                  • Основы программирования • Основы JavaScript • Основы
-                  разработки интерфейсов • Работа с DOM • Работа с состоянием
-                </p>
+                <div class="lng-coursesItemNetologyJSDesc">
+                  <p>
+                    <b>Курс</b>:
+                    <span class="selection-text"
+                      >JavaScript-программирование для начинающих</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: HTML • CSS • Верстка форм •
+                    FlexBox • Адаптивная и мобильная верстка • Система контроля
+                    версий Git • Основы программирования • Основы JavaScript •
+                    Основы разработки интерфейсов • Работа с DOM • Работа с
+                    состоянием
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   @@include('./experience-icon/eye.html')
-                  <a href="#">Диплом профессиональной переподготовки</a>
+                  <a href="#" class="lng-coursesItemNetologyJSLink"
+                    >Диплом профессиональной переподготовки</a
+                  >
                 </div>
               </div>
             </div>
@@ -172,15 +222,25 @@
                 <div class="experience__item-icon">
                   @@include('./experience-icon/course.html')
                 </div>
-                <h5 class="experience__item-title">Нетология</h5>
-                <p class="experience__item-location">Июнь 2022 - Июль 2022</p>
+                <div class="lng-coursesItemNetologyLayout">
+                  <h5 class="experience__item-title">Нетология</h5>
+                  <p class="experience__item-location">Июнь 2022 - Июль 2022</p>
+                </div>
               </div>
               <div class="experience__item-body">
-                <p><b>Курс</b>:<span class="selection-text"> Основы верстки сайта</span></p>
-                <p><b>Улучшаемые навыки</b>: HTML • CSS • Адаптивная верстка</p>
+                <div class="lng-coursesItemNetologyLayoutDesc">
+                  <p>
+                    <b>Курс</b>:<span class="selection-text">
+                      Основы верстки сайта</span
+                    >
+                  </p>
+                  <p>
+                    <b>Улучшаемые навыки</b>: HTML • CSS • Адаптивная верстка
+                  </p>
+                </div>
                 <div class="experience__item-link">
                   @@include('./experience-icon/eye.html')
-                  <a href="#">Сертификат об обучении</a>
+                  <a href="#" class="lng-coursesItemRSJavaScript0Link">Сертификат об обучении</a>
                 </div>
               </div>
             </div>
