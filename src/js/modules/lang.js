@@ -19,6 +19,10 @@ export const langArr = {
     ru: 'Контакты',
     en: 'Contacts',
   },
+  home: {
+    ru: 'Домашняя',
+    en: 'Home',
+  },
   about: {
     ru: 'Обо мне',
     en: 'About me',
@@ -43,7 +47,7 @@ export const langArr = {
     ru: 'Скачать резюме',
     en: 'DownLoad CV',
   },
-  name: {
+  myName: {
     ru: 'Меня зовут Татьяна',
     en: 'My name is Tatyana',
   },

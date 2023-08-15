@@ -5,16 +5,10 @@
           <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"/>
         </svg>
       </div>
-      <nav>
-        <ul class="menu-window__list">
-          <li class="menu-window__link"><a class="lng-about" href="#">About me</a></li>
-          <li class="menu-window__link"><a class="lng-skills" href="#">Skills</a></li>
-          <li class="menu-window__link"><a class="lng-experience" href="#">Experience</a></li>
-          <li class="menu-window__link"><a class="lng-progects" href="#">Projects</a></li>
-          <li class="menu-window__link"><a class="lng-contacts" href="#">Contacts</a></li>
-        </ul>
-      </nav>
-
+      <div class="menu-window__img">
+        <img src="./img/jpg/photo-min.jpg" alt="Photo">
+      </div>
+      <h2 class="menu-window__title lng-copy">Алексеева Татьяна</h2>
       <ul class="menu-window__social">
         <li class="menu-window__social-item">
           <a href="https://github.com/alekseeva-t-v" target="_blank">
@@ -45,6 +39,18 @@
           </a>
         </li>
       </ul>
+      <nav>
+        <ul class="menu-window__list">
+          <li class="menu-window__link menu-window__link-home">@@include('./menu-icon/home.html') <a class="lng-home" href="./index.html">Домашняя</a></li>
+          <li class="menu-window__link menu-window__link-about">@@include('./menu-icon/about.html') <a class="lng-about" href="./about.html">Обо мне</a></li>
+          <li class="menu-window__link menu-window__link-experience">@@include('./menu-icon/experience.html') <a class="lng-experience" href="./about.html#experience">Опыт</a></li>
+          <li class="menu-window__link menu-window__link-skills">@@include('./menu-icon/skills.html') <a class="lng-skills" href="./about.html#skills">Навыки</a></li>
+          <li class="menu-window__link menu-window__link-portfolio">@@include('./menu-icon/projects.html') <a class="lng-progects" href="./index.html#projects">Проекты</a></li>
+          <li class="menu-window__link menu-window__link-contacts">@@include('./menu-icon/contacts.html') <a class="lng-contacts" href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-window__copyright">@2023 <span class="lng-copy">Алексеева Татьяна</span></div>
     </div>
     <div class="menu-window__overlay"></div>
   </div>

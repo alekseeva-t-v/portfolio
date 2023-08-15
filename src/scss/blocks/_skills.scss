@@ -1,4 +1,6 @@
 .skills {
+  padding-top: 100px;
+
   &__sub-title {
     position: relative;
     z-index: 2;
@@ -48,7 +50,6 @@
   &__card:hover {
     height: 360px;
   }
-
 
   &__img-box {
     position: absolute;
