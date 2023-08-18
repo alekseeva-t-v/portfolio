@@ -23,7 +23,6 @@
   &__divider {
     width: 2px;
     height: 70px;
-    // background-color: var(--text-color);
     background-color: var(--sidepanel-color);
   }
 
@@ -31,12 +30,17 @@
     height: 100px;
     width: 25px;
     font-size: 18px;
-    // color: var(--text-color);
     color: var(--sidepanel-color);
     span {
       display: block;
       width: 100px;
       transform: rotate(-90deg) translate(-30%, -160%);
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .sidepanel {
+    display: none;
   }
 }

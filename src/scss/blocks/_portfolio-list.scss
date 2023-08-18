@@ -19,7 +19,7 @@
     &:hover {
       transform: translateY(-15px);
 
-      .projects__title {
+      .portfolio__title {
         color: var(--title-color);
       }
     }
@@ -44,5 +44,46 @@
     font-size: 18px;
     font-style: italic;
     color: var(--project-card-text);
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    &__text {
+        font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio {
+    &__list {
+      column-gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    &__list-item {
+      width: 100%;
+    }
+
+    &__title {
+      color: var(--title-color);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio {
+    &__title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    &__text {
+        font-size: 15px;
+    }
   }
 }

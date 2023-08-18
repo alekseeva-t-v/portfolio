@@ -1,6 +1,7 @@
 .footer {
-  padding: 5px 0 5px;
-  flex: 0 0 auto;
+	flex: 0 0 auto;
+  padding: 10px 0 10px;
+
   background-color: var(--dark-bg);
   border-top: solid 1px var(--dark-border);
 
@@ -35,6 +36,7 @@
 
 	&__copy {
 		font-size: 18px;
+
 		color: var(--white);
 	}
 }

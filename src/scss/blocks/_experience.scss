@@ -4,7 +4,9 @@
   &__sub-title {
     position: relative;
     z-index: 2;
+
     text-align: center;
+
     @include before_circle;
 
     &:before {
@@ -23,31 +25,38 @@
   }
 
   &__wrapper {
-    padding: 40px 65px 0 65px;
     display: grid;
     grid-template-columns: repeat(2, 525px);
-    column-gap: 135px;
+    column-gap: 60px;
+    padding: 40px 65px 0 65px;
   }
 
   &__column {
     &-title {
       position: relative;
+
       padding-left: 35px;
+
       font-size: 20px;
-      line-height: 30px;
       font-weight: 700;
+      line-height: 30px;
+
       color: var(--title-color);
 
       &:before {
         content: '';
+
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+
         width: 15px;
         height: 15px;
+
         background-color: var(--blue-bright);
         border-radius: 100%;
+
+        transform: translateY(-50%);
       }
     }
 
@@ -58,11 +67,14 @@
         position: relative;
         &:after {
           content: '';
+
           position: absolute;
-          width: 2px;
-          height: calc(100% + 18px);
           top: -18px;
           left: 7px;
+
+          width: 2px;
+          height: calc(100% + 18px);
+
           background-color: var(--blue-bright);
         }
       }
@@ -74,24 +86,31 @@
 
     &:before {
       content: '';
+
       position: absolute;
       top: 68px;
       left: 7px;
+
       height: 1px;
       width: 43px;
+
       background-color: var(--blue-bright);
     }
 
     &-head {
       position: relative;
+
       padding: 45px 0 0 115px;
+
       color: var(--text-color);
     }
 
     &-body {
       margin-top: 14px;
       padding-left: 43px;
+
       line-height: 1.6;
+
       color: var(--text-color);
 
       p {
@@ -104,6 +123,7 @@
       z-index: 2;
       top: 50px;
       left: 46px;
+
       @include before_circle;
 
       svg {
@@ -118,6 +138,7 @@
 
     &-location {
       margin-top: 10px;
+
       font-style: italic;
     }
 
@@ -128,9 +149,11 @@
       width: 95%;
       margin-top: 25px;
       padding: 3px;
-      border: 2px solid var(--text-color);
+
       color: var(--text-color);
+      border: 2px solid var(--text-color);
       border-radius: 5px;
+
       cursor: pointer;
       transition: all 0.6s;
 
@@ -148,16 +171,38 @@
       }
 
       svg {
-        width: 25px;
+        min-width: 25px;
         margin-right: 10px;
+
         fill: var(--text-color);
+
         transition: all 0.6s;
       }
 
       a {
         color: var(--text-color);
+
         transition: all 0.6s;
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .experience {
+    &__wrapper {
+      grid-template-columns: repeat(2, 425px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .experience {
+    &__wrapper {
+      grid-template-columns: 100%;
+      padding: 40px 30px 0 30px;
+
+      font-size: 16px;
     }
   }
 }
