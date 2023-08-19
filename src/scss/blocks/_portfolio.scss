@@ -29,14 +29,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 20px;
   }
 
   &__card {
     position: relative;
     width: 48%;
-    max-height: 130px;
 
     cursor: pointer;
     &-content {
@@ -50,6 +49,7 @@
       .portfolio__face-header {
         background: var(--blue-bright);
         border-radius: 10px 10px 0 0;
+        box-shadow: none;
 
         h3 {
           color: var(--white);
@@ -62,6 +62,8 @@
 
       .portfolio__face-body {
         height: 130px;
+        padding: 20px;
+
         border-radius: 0 0 10px 10px;
         transform: translateY(0) scale(1);
       }
@@ -84,6 +86,7 @@
 
     background-color: var(--gray);
     border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 
     h3 {
       font-size: 24px;
@@ -101,7 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     transform: translateY(-100%) scale(0);
     height: 0;
     color: var(--project-card-text);
@@ -175,6 +178,12 @@
 
 @media (max-width: 576px) {
   .portfolio {
+    &__face-body {
+      .portfolio__card-content {
+        flex-wrap: wrap;
+      }
+    }
+
     &__card-content {
       h3 {
         font-size: 20px;
@@ -189,8 +198,18 @@
       }
     }
 
-    &__face-header {
-      height: 80px;
+    &__link {
+      height: 30px;
+      margin: 20px auto 0 auto;
+      padding: 3px 10px 0 10px;
+    }
+
+    &__card--active {
+      min-height: 200px;
+
+      &.portfolio__face-body {
+        height: 100px;
+      }
     }
   }
 }
