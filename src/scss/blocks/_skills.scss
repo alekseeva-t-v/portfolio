@@ -47,7 +47,7 @@
     height: 300px;
 
     background: var(--project-card-bg);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: var(--box-shadow);
 
     transition: 0.5s;
@@ -140,7 +140,7 @@
 @media (max-width: 768px) {
   .skills {
     &__wrapper {
-      width: 100%;
+      width: 95%;
       gap: 100px 50px;
     }
 

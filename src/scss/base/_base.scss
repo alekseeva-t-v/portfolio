@@ -19,7 +19,7 @@ body {
 
 .body_hide {
 	opacity: 0;
-	transition: .9s opacity ease-in-out;
+	transition: 500ms opacity ease-in-out;
 }
 
 .body_visible {
