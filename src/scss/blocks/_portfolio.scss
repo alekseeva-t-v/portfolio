@@ -58,6 +58,10 @@
         svg {
           fill: var(--white);
         }
+
+        &:hover {
+          transform: translateY(0);
+        }
       }
 
       .portfolio__face-body {
@@ -88,14 +92,32 @@
     border-radius: 10px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 
+    transition: all 0.5s;
+
     h3 {
       font-size: 24px;
       font-weight: 700;
       color: #bdbaba;
+
+      transition: all 0.5s;
     }
 
     svg {
       fill: #bdbaba;
+
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      transform: translateY(-15px);
+
+      h3 {
+        color: var(--white);
+      }
+
+      svg {
+        fill: var(--white);
+      }
     }
   }
 
