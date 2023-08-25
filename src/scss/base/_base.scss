@@ -17,6 +17,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .body_hide {
 	opacity: 0;
 	transition: 500ms opacity ease-in-out;
@@ -24,6 +30,12 @@ body {
 
 .body_visible {
 	opacity: 1;
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+  background-color: var(--page-bg);
 }
 
 .content {
