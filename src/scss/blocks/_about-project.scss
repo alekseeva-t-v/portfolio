@@ -161,7 +161,6 @@
 
 @media (max-width: 768px) {
   .about-project {
-    padding-top: 150px;
 
     &__slider-list {
       width: 510px;
@@ -172,6 +171,8 @@
 
 @media (max-width: 576px) {
   .about-project {
+    padding-top: 80px;
+
     &__slider-list {
       width: 365px;
       height: 242px;
