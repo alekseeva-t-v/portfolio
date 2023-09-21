@@ -92,20 +92,20 @@
     border-radius: 10px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 
-    transition: all 0.5s;
+    transition: all 0.8s;
 
     h3 {
       font-size: 24px;
       font-weight: 700;
       color: #bdbaba;
 
-      transition: all 0.5s;
+      transition: all 0.8s;
     }
 
     svg {
       fill: #bdbaba;
 
-      transition: all 0.5s;
+      transition: all 0.8s;
     }
 
     &:hover {
@@ -143,11 +143,11 @@
     color: var(--text-color);
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.6s;
+    transition: all 0.8s;
 
     a {
       color: var(--text-color);
-      transition: all 0.6s;
+      transition: all 0.8s;
     }
 
     &:hover {

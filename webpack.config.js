@@ -5,6 +5,7 @@ const config = {
     about: './src/js/about.js',
     projects: './src/js/projects.js',
     contacts: './src/js/contacts.js',
+    momentum: './src/js/momentum.js',
   },
   output: {
     filename: '[name].bundle.js',
